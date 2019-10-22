@@ -35,21 +35,13 @@ headrs_other = random.choice(headers_list)
 conn = pymysql.connect(
     host = 'localhost',
     port = 3306,
-    db = 'python4',
+    db = 'zhihu_data',
     user = 'root',
     passwd = '123456',
-    charset = 'utf8'
+    charset = 'utf8mb4'
 )
 
-conn_zhidao_formal_a = pymysql.connect(
-    host = 'localhost',
-    port = 3306,
-    db = 'python4',
-    user = 'root',
-    passwd = '123456',
-    charset = 'utf8'
-)
-
+"""
 test_items = {
     'id': '1115709898426009339',
     'answerer': '如果喜欢请深爱',
@@ -59,6 +51,7 @@ test_items = {
     'comment_best':'高顿的初级会计职称和会计实操都不错，一个是理论基础，一个是基本会计上岗技能！还有中级会计职称，注册会计师（cpa）以及ACCA！',
     'comment_common': ''
 }
+"""
 
 
 # 当连接错误数超过多少时重新ip池，修改该值,默认值200
